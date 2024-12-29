@@ -1,0 +1,73 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+header {
+    background-color: #007acc;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 1em;
+    max-width: 600px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1em;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+button {
+    padding: 0.2em 0.5em;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+button.edit {
+    color: blue;
+}
+
+button.delete {
+    color: red;
+}
+
+#progress-bar-container {
+    width: 100%;
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+#progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #007acc;
+    transition: width 0.3s ease;
+}
